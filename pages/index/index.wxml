@@ -35,7 +35,10 @@
     </view>
   </view>
   <!-- 疑似地点内容 -->
-  <view class="tip">将为您提供全国实时的疑似地点和确诊概率的预测分析</view>
+  <view class="tip">
+  <!-- 将为您提供全国实时的疑似地点和确诊概率的预测分析 -->
+  <image wx:if='{{picurl}}' src="{{picurl}}images/wordcloud.png" style="width:100%;height:350rpx;" mode="aspectFit"></image>
+  </view>
   <!-- 推荐&查看全部 -->
   <view class="recommendbox">
     <view class="txtleft">
