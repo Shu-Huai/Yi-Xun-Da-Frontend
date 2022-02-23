@@ -1,0 +1,45 @@
+.box{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  border-bottom:rgba(231, 228, 228, 0.582) solid 5rpx;
+}
+.box .out{
+  display: flex;
+  flex-direction: row;
+}
+.box .out .info{
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  margin-left: 20rpx;
+}
+.box .out .info .time{
+  margin-top: 10rpx;
+  color:gray;
+}
+.box .text{
+  margin-top: 10rpx;
+  font-size: small;
+  line-height: 1.5em;
+}
+.box2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box2 .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150rpx;
+}
+.box2 .noNews{
+  margin-top: 80rpx;
+  font-size: x-large;
+}

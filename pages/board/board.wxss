@@ -1,0 +1,136 @@
+.all_tip {
+  position: relative;
+  color: #5f5e5e;
+  font-size: 28rpx;
+  text-align: left;
+  line-height: 30rpx;
+  height:35rpx;
+  margin: 40rpx 0;
+  width: 100%;
+}
+.all_tip .all_tip_ini {
+  padding: 0 40rpx 0 40rpx;
+  line-height: 25rpx;
+  height: 25rpx;
+  display: block;
+}
+.all_tip .all_bold {
+  color: #222;
+  font-weight: 500;
+}
+/* 更新数据 */
+.tip_dia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30rpx;
+}
+.tip_dia .tip_box {
+  position: relative;
+  width: 160rpx;
+  text-align: center;
+  margin-right: 8rpx;   
+}
+.tip_box .add_last {
+  font-size: 20rpx;
+  color: #7c7c7c;
+  font-weight: 500;
+  padding-top: 20rpx;
+  line-height: 28rpx;
+  display: inline-block;
+}
+.tip_box .num {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  font-size: 46rpx;
+}
+.tip_box .txt {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  color: #222;
+  font-size: 28rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  font-weight: 500;
+}
+.tip_box.dia {
+  background-color: #fdf1f1;
+  border-radius: 12rpx 0 0 12rpx;
+}
+.tip_box.dia .num,
+.tip_box.dia .add_last span {
+  color: #f55253;
+}
+.tip_box.dia .txt {
+  background-color: #ffe0e0; 
+  border-radius: 0 0 0 12rpx; 
+}
+.tip_box.sus {
+  background-color: #fff7ed;
+}
+.tip_box.sus .num,
+.tip_box.sus .add_last span {
+  color: #ff961e;
+}
+.tip_box.sus .txt {
+  background-color: #ffeed9;  
+}
+.tip_box.cur {
+  background-color: #f8f5dc;
+}
+.tip_box.cur .num,
+.tip_box.cur .add_last span {
+  color: #d6b547;
+}
+.tip_box.cur .txt {
+  background-color: #fffacd;  
+}
+.tip_box.death {
+  background-color: #f8f8f8;
+  border-radius: 0 12rpx 12rpx 0;
+}
+.tip_box.death .num,
+.tip_box.death .add_last span {
+  color: #66666c;
+}
+.tip_box.death .txt {
+  background-color: #eeeeee;  
+  border-radius: 0 0 12rpx 0;
+}
+.maptitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  margin-top: 60rpx;
+}
+.maptitle .txt{
+
+  font-weight: 800;
+}
+.map{
+  margin-top: 20rpx;
+}
+.btn1{
+  height:200rpx;
+  width:100%;
+  display: flex;
+  align-items: center;
+  
+}
+.btn1 .Btnconfirmed{
+  padding: 10rpx;
+  width:300rpx;
+
+}
+.btn1 .BtnGotoShmap{
+  padding: 10rpx;
+  width:200rpx;
+
+}

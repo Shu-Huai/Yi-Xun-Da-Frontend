@@ -1,0 +1,23 @@
+<view> 
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{url}}" mode="aspectFit"></image> 
+  <view>
+    <view class="userinfo-NickName" wx:if="{{tag}}">
+    {{greetings}}{{name}} 
+    </view>
+    <view class="taptologin" wx:else> 
+    {{in}}
+    </view>  
+  </view>
+  
+  <view class="showinfo">
+    <view class="mid">
+      <button bindtap="HealthCode">{{show1}}</button>     
+      <button bindtap="TripCode">{{show2}}</button>      
+    </view>
+  </view> 
+  
+  <view class="logout" wx:if="{{tag}}">   
+    <button bindtap="logout">{{show3}}</button>
+  </view>
+</view>
+

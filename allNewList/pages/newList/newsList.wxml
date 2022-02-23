@@ -1,0 +1,36 @@
+<view class="box2" >
+  <!-- 新闻框 -->
+  <view class="newbox" wx:for="{{newsList}}" wx:key="index"> 
+    <!-- 发布人信息+时间 -->
+    <view class="header">
+    <!-- 头像 -->
+      <view class="idpic">
+        <image src="{{item.profileUrl}}" style="height:100rpx;width:100rpx;border-radius:50%;border: 1px solid gray;"></image>
+      </view>
+      <!-- 名字+时间 -->
+      <view class="idinfo">
+        <view class="idname">{{item.screenName}}</view>
+        <view class="time">
+        <view>{{item.createdAt}}</view>
+      </view>
+      </view>
+
+    </view>
+    <!-- 新闻主题 -->
+    <view class="body">
+    <!-- 内容 -->
+    <view class='content {{item.status ? "hidden" : ""}}'>{{item.text}}</view>
+      <view class='readmore-tip' bindtap='toggle' data-index='{{index}}'>{{item.tip}}</view>
+      <!-- <view class="text">{{item.text}}</view> -->
+      <view class="link" wx:if="{{item.pics}}" wx:for="{{item.pics}}" wx:for-item="pics" wx:key="index">
+        <image src="{{pics}}" style="height: 300rpx;width: 500rpx;" mode="widthFix"></image>
+      </view>
+      <!-- <view class="link" wx:else="{{item.VideoUrl}}">
+        <video src="{{item.videoUrl}}" style="height: 300rpx;width: 500rpx;" binderror="videoErrorCallback"></video>
+      </view> -->
+    </view>
+    <!-- 分割线 -->
+    <!-- <view class="divideLine"></view> -->
+  </view>
+
+</view>

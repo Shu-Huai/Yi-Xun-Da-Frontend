@@ -1,0 +1,36 @@
+<!--pages/loc_prediction/loc_prediction.wxml-->
+
+<view class="toptitle">
+  <!-- <view>实 时 预 测</view> -->
+</view>
+<!-- 疑似地点栏 -->
+<view class="place" wx:for="{{placeList}}" wx:key="index">
+  <!-- 疑似地点：xxx -->
+  <view class="locPrediction">
+    <view class="title">
+      <image src="{{picurl}}images/question.png" style="height:70rpx;width:80rpx;"></image>
+    </view>
+    <view class="detail">{{item.placeName}}</view>
+  </view>
+  <!-- 概率 -->
+  <view class="rate">
+    <view class="box">
+      <view class="num">{{item.diagnosisRate}}</view>
+      <view class="name">确诊率</view>
+    </view>
+    <view class="box">
+      <view class="num">{{item.closeRate}}</view>
+      <view class="name">封闭率</view>
+    </view>
+
+  </view>
+  <!-- 最新消息 -->
+  <view class="news">
+    <view class="icon">
+      <image src="{{picurl}}images/new.png" style="height:70rpx;width:100rpx"></image>
+    </view>
+    <navigator class="text" url="../../pages/locNews/locNews?placeName={{item.placeName}}">相关报道 > ></navigator>
+  </view>
+</view>
+
+<!-- weiboList={{item.weiboList}} -->

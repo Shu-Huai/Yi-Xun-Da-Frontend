@@ -1,0 +1,82 @@
+/* pages/newList/newsList.wxss */
+.box2{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  width:95%;
+  display: flex;
+  flex-direction: column;
+}
+.box2 .newbox{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  border-bottom:rgba(231, 228, 228, 0.582) solid 5rpx;
+  /* background-color: rgba(231, 228, 228, 0.452); */
+  width: 95%;
+
+}
+.box2 .newbox .header{
+  display: flex;
+  flex-direction: row;
+  height:100rpx;
+  margin-top: 20rpx;
+  
+}
+/* .box2 .newbox .header .idpic{ 
+
+} */
+.box2 .newbox .header .idinfo{
+  height:70rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.box2 .newbox .header .idinfo .idname{
+  height:30rpx;
+  margin-top: 10rpx;
+}
+.box2 .newbox .header .idinfo .time{
+  height:30rpx;
+  margin-top: 20rpx;
+  font-size: small;
+  color:gray;
+}
+.box2 .newbox .body{
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+  width: 98%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* .box2 .newbox .body .text{
+  font-size: 24rpx;
+  line-height: 1.5em;
+  margin-left: 10rpx;
+} */
+/* 超出5行隐藏多余部分并且显示省略号 */
+.box2 .newbox .body .hidden{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.box2 .newbox .body .readmore-tip {
+  color: #196a99;
+  font-size: 24rpx;
+  margin-top: 30rpx;
+}
+.box2 .newbox .body .content{
+  font-size: 24rpx;
+  line-height: 1.5em;
+  margin-left: 10rpx;
+}
+.box2 .newbox .body .link{
+  margin-top: 20rpx;
+} 
+/* .box2 .newbox .divideLine{
+  height:20rpx;
+  width:95%;
+  background-color: rgba(238, 236, 236, 0.562);
+} */

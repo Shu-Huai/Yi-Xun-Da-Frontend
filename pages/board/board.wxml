@@ -1,0 +1,49 @@
+<!--pages/center/center.wxml-->
+<!-- 地图 -->
+<view class="title">
+  <view class="all_tip">
+    <span class="all_tip_ini">
+      统计截至 <span class="all_bold">{{ allList[0].relativeTime }}</span>
+    </span>
+  </view>
+  <view class="tip_dia">
+    <view class="tip_box dia">
+      <p class="add_last">
+        较上日<span>+{{ allList[0].curConfirmRelative }} </span>
+      </p>
+      <p class="num">{{ allList[0].curConfirm }}</p>
+      <p class="txt">现有确诊</p>
+    </view>
+    <view class="tip_box sus">
+      <p class="add_last">  
+        较上日<span>+{{ allList[0].asymptomaticRelative }} </span>
+      </p>
+      <p class="num">{{ allList[0].asymptomatic }}</p>
+      <p class="txt">无症状</p>
+    </view>
+    <view class="tip_box cur">
+      <p class="add_last">
+        较上日<span>+{{ allList[0].unconfirmedRelative }} </span>
+      </p>
+      <p class="num">{{ allList[0].unconfirmed }}</p>
+      <p class="txt">现有疑似</p>
+    </view>
+    <view class="tip_box death">
+      <p class="add_last">
+        较上日<span>+{{ allList[0].seriousRelative }} </span>
+      </p>
+      <p class="num">{{ allList[0].serious }}</p>
+      <p class="txt">现有重症</p>
+    </view>
+  </view> 
+</view>
+<view class="maptitle">
+  <view class="txt">中国疫情地图</view>
+</view>
+<view class="map">
+<chinamap dataList="{{dataList}}" dataPoint="{{dataPoint}}" id="mapComponent" />
+</view>
+<!-- <view class="btn1">
+  <button class="Btnconfirmed" bindtap="hisBtnClickMap">现存确诊</button>
+<button class="BtnGotoShmap" bindtap='gotoShmap'>上海地图</button>
+</view> -->

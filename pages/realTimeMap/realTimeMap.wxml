@@ -1,0 +1,41 @@
+<view class="page-body">
+  <view class="page-section page-section-gap">
+    <map
+      id="myMap"
+      style="width: 100%; height: 100vh;"
+      latitude="{{latitude}}"
+      longitude="{{longitude}}"
+      markers="{{markers}}"
+      covers="{{covers}}"
+      scale="{{scale}}"
+      bindmarkertap="clickmarker"
+      show-location
+      circles="{{circles}}"
+    >
+    <view class="showmes" wx:if="{{hastap}}" >       
+      <image src="{{picurl}}images/out.png" class="out" bindtap="close"></image>
+      <view class="loc_name">{{name}}</view>            
+      <view class="dis">距您距离：{{distance}} km</view>     
+      <view class="ty">场所类型：{{type}}</view> 
+    </view>
+  </map>    
+  </view>  
+  <view class="btn-area">
+    <button
+      style="width: 45px; height: 45px;"
+      bindtap="onChangeAddress"
+      class="searchLocationButton"
+      type="default"
+    >
+      <image wx:if='{{picurl}}' src="{{picurl}}images/searchLocation.png" class="searchLocationImage"></image>
+    </button>
+    <button
+      style="width: 45px; height: 45px;"
+      bindtap="moveToLocation"
+      class="backToLocationButton"
+      type="default"
+    >
+      <image wx:if='{{picurl}}' src="{{picurl}}images/backToLocation.png" class="backToLocationImage"></image>
+    </button>
+  </view>
+</view>

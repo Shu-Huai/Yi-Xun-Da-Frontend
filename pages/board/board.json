@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "chinamap" : "/components/chinamap/chinamap"
+  }
+}

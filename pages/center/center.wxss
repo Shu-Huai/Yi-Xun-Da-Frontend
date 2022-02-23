@@ -1,0 +1,76 @@
+/* pages/info/info.wxss */
+
+.userinfo-avatar {   
+    overflow:hidden;  
+    display: block;  
+    width: 240rpx;  
+    height: 240rpx;  
+    margin-top: 75rpx;   
+    margin-left:245rpx;  
+    border-radius: 50%;  
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}  
+
+.userinfo-NickName{
+   /* margin:30rpx 0rpx 0rpx 100rpx;*/
+   font-size: 45rpx;  
+   text-align: center;
+    color: #aaa;
+    margin-top:25rpx;
+}
+
+.taptologin{
+    font-size: 30rpx;
+    text-align: center;
+    color: #aaa;
+    margin-top:40rpx;
+}
+
+.showinfo{
+    font-size: 60rpx;
+    text-align: center;  
+    color: #aaa;  
+    line-height: 2;    
+}
+
+.mid{
+    margin-top: 70rpx;
+    height: 250rpx;
+    width: 750rpx;
+    display: flex;
+    align-items: center;
+}
+
+.mid button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200rpx;
+    border: 1rpx solid rgba(233, 233, 233, 0.829);
+    border-radius: 0rpx;
+    font-size:large;
+    font-weight: bold;
+    width:43%;
+}
+
+.logout{    
+    height: 250rpx;
+    width: 750rpx;
+    align-items: center;
+    position: fixed;
+    bottom:0%;
+}
+
+.logout button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 124rpx;
+    border: 1rpx solid rgba(233, 233, 233, 0.829);
+    border-radius: 0rpx;
+    font-size: large;
+    font-weight: normal;
+    width:750rpx;
+    margin-top: 63rpx;
+}

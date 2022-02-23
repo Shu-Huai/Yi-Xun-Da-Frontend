@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/board/board",
+    "pages/center/center",
+    "pages/realTimeMap/realTimeMap",
+    "pages/loc_prediction/loc_prediction",
+    "pages/locNews/locNews"
+
+  ],
+
+  "subpackages": [
+    {
+      "root": "allNewList/",
+      "pages": [
+        "pages/newList/newsList"
+      ]
+    }
+  ],
+
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于小程序实时地图定位"
+    }
+  },
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "疫迅达",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#A9A9A9",
+    "selectedColor": "var(--emphasizecolor)",
+    "borderStyle": "white",
+    "backgroundColor": "FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/indexun.png",
+        "selectedIconPath": "images/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/realTimeMap/realTimeMap",
+        "iconPath": "images/mapun.png",
+        "selectedIconPath": "images/map.png",
+        "text": "实时地图"
+      },
+      {
+        "pagePath": "pages/board/board",
+        "iconPath": "images/boardun.png",
+        "selectedIconPath": "images/board.png",
+        "text": "疫情中心"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "images/centerun.png",
+        "selectedIconPath": "images/center.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

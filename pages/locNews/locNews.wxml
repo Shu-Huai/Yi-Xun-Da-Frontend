@@ -1,0 +1,23 @@
+<view wx:if="{{isListNull==false}}" >
+  <view class="box" wx:for="{{weiboList}}" wx:key="index">
+  <view class="out">
+    <view class="icon">
+      <image src="https://i.ibb.co/tcwvP9R/image.png" style="width:80rpx;height:80rpx" mode="aspectFit"></image>
+    </view>
+    <view class="info">
+      <view class="name">{{item.screenName}}</view>
+      <view class="time">{{item.createdAt}}</view>
+    </view>
+  </view>  
+    <view class="text">{{item.text}}</view>
+  </view>
+</view>
+<view wx:else="{{isListNull==true}}">
+  <view class="box2">
+    <view class="icon">
+      <image src="https://i.ibb.co/V0G2pvK/image.png" style="width:300rpx;height:300rpx" mode="aspectFit"></image>
+    </view>
+    <view class="noNews">暂无相关报道！</view>
+  </view>
+  
+</view>
