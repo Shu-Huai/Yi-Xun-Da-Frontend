@@ -16,7 +16,13 @@
       <image src="{{picurl}}images/out.png" class="out" bindtap="close"></image>
       <view class="loc_name">{{name}}</view>            
       <view class="dis">距您距离：{{distance}} km</view>     
-      <view class="ty">场所类型：{{type}}</view> 
+      <view class="ty">风险等级：{{type}}</view> 
+    </view>
+    <view class="info_bar">  
+      <view wx:for="{{tags}}" class="info_bar_item">
+        <image src="{{item.url}}" class="info_bar_style" mode="widthFix"></image>
+        <text>：{{item.meaning}}</text>
+      </view>
     </view>
   </map>    
   </view>  

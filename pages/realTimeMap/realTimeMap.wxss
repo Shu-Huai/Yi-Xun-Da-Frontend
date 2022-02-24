@@ -45,6 +45,23 @@
   opacity: 0.8;
 }
 
+.info_bar{
+  background: rgb(255, 255, 255);
+  border-radius: 40rpx;
+  opacity: 0.8;
+  overflow: hidden;
+  position: fixed;
+  top:1%;
+  left:2%;
+  width: 30%;
+  height:25%;
+  padding:2%;
+}
+
+.info_bar_style{
+  width:33%;
+}
+
 .showmes{
   background: rgb(255, 255, 255);
   height: 25%;
