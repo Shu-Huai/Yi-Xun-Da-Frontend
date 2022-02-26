@@ -15,7 +15,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    url: "http://s1.s100.vip:32106/api/",
+    url: "http://example:32106/api/",
     picurl: "https://shu-covid.oss-cn-shanghai.aliyuncs.com/"
   }
 })
