@@ -94,7 +94,7 @@ Page({
     var that = this;
     var app = getApp();
     wx.request({
-      url: app.globalData.url + "Covid/getAllSumdom",
+      url: app.globalData.url + "Covid/getAllSumDom",
         header: {
           'content-type': 'application/json' // 默认值
         },
